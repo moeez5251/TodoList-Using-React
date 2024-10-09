@@ -68,9 +68,9 @@ function App() {
   }
 
   return (
-    <>
+    < >
       <Navbar />
-      <div className="container mx-auto bg-slate-100 mt-10 rounded-xl p-5 min-h-[80vh]">
+      <div className="font-roboto container mx-auto bg-slate-100 mt-10 rounded-xl p-5 min-h-[80vh]">
         <h1 className='font-bold text-2xl'>Add a todo</h1>
         <div className="addtodo my-9 flex flex-col gap-5 sm:flex-row">
           <input onChange={handlechange} value={todo} className='bg-white w-full  py-2 rounded-xl border-none outline-none text-[18px] sm:mx-8 sm:w-7/12 px-6' type="text" name='name' placeholder='Write todo here' />
