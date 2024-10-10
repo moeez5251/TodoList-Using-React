@@ -82,8 +82,8 @@ function App() {
           {todos.length === 0 && <div className='text-lg font-[400] m-2'>No todos to display</div>}
           {todos.map(item => {
 
-            return <div key={item.id} className="todo flex justify-between items-center m-5">
-              <div className={`text font-[500] text-lg flex gap-4 items-center ${item.iscomplete ? "line-through" : ""}`} >
+            return <div key={item.id} className="todo flex justify-between items-center sm:m-5">
+              <div className={`text font-[500] text-lg w-1/2  [overflow:overlay] flex gap-4 items-center ${item.iscomplete ? "line-through" : ""}`} >
                 <input onChange={handlecheck} type="checkbox" checked={item.iscomplete} name="check" id={item.id} />
 
                 {item.todo}
